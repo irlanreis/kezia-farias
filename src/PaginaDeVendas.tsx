@@ -57,7 +57,67 @@ const PaginaDeVendas = () => {
             Quero a proteção bronze
           </a>
         </div>
+        <p className="text-04">
+          Além dos documentos citados anteriomente, você recebe documentos mais
+          elaborados que garantem uma gestão eficiente e segura, como:
+        </p>
+        <div className="card">
+          <h3>Proteção Gold</h3>
+          <ul className="item-list">
+            <li>Proteção Bronze</li>
+            <li>Termo para Concessão do Uso de Imagem</li>
+            <li>Termo de Compromisso, Sigilo e Confidencialidade</li>
+            <li>Acordo de Compensação de Horas</li>
+            <li>Código de Conduta</li>
+          </ul>
+          <div className="price">Por apenas R$397,00</div>
+          <a href="#" className="button">
+            Quero a proteção gold
+          </a>
+        </div>
+        <p className="text-04">
+          Agora esse kit é pra você que deseja um <br /> pacote ainda mais
+          completo. <br />
+          Você garante todos os anteriores e mais:
+        </p>
+        <div className="card">
+          <h3>Máxima Segurança</h3>
+          <ul className="item-list">
+            <li>Proteção Bronze</li>
+            <li>Proteção Gold</li>
+            <li>Termo de Ciência de Gravação</li>
+            <li>Política de Remuneração</li>
+            <li>Regimento Interno</li>
+          </ul>
+          <div className="price">Por apenas R$497,00</div>
+          <a href="#" className="button">
+            Quero a proteção gold
+          </a>
+        </div>
       </div>
+      <p className="text-04">
+        Se você fosse contratar a elaboração desses documentos separadamente,
+      </p>
+      <p className="text-02 text-circle">
+        o investimento poderia ultrapassar o valor de R$ 5.000 a R$ 7.000,
+      </p>
+      <p className="text-04">
+        Além de evitar multas e indenizações que poderiam ultrapassar esse valor
+        facilmente, você protegerá seu patrimônio e garantindo a
+        segurança jurídica da sua empresa.
+      </p>
+      <p className="text-02">
+        Todos os arquivos são entregues em formato Word, 100% editáveis, para
+        que você possa personalizar com o logo e dados da sua empresa.
+      </p>
+      <p className="text-04 ">
+        Não perca essa oportunidade de blindar seu negócio de forma prática e
+        econômica!
+      </p>
+      <button type="button" className="button">
+      CLIQUE AQUI E
+      PROTEJA SUA EMPRESA
+      </button>
     </div>
   );
 };
