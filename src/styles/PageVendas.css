@@ -65,6 +65,109 @@ body {
   max-width: 400px;
 }
 
+.card {
+  width: 360px;
+  height: 480px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  tranform-origin: center;
+  margin: 20px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.card-back {
+  background-color: #00134D;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+
+.card-back:nth-child(2) li {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin: 6px;
+  text-align: left;
+  margin: 10px;
+}
+
+.title-h3 {
+  font-family: "Gideon Roman", serif;
+  font-weight: 100;
+  font-size: 38px;
+  color: #D4AF37;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #D4AF37;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #b88f14;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-link:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.btn {
+  background-color: #b88f14;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.btn:hover {
+  background-color: #218838;
+}
 .text-01-destaque {
   font-style: italic;
   font-weight: 300;
@@ -85,7 +188,7 @@ hr {
   color: #fff;
   text-align: center;
   width: 400px;
-  background-color: #00134d;
+  border: 2px solid #b88f14;
   border-radius: 10px;
 }
 
@@ -102,54 +205,6 @@ hr {
   position: relative;
 }
 
-.card {
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 318px;
-  height: 400px;
-  margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 00.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #00134d;
-}
-
-.card h3 {
-  color: #D4AF37;
-  font-size: 2em;
-  font-family: "Gideon Roman", serif;
-  font-weight: 100;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.price {
-  font-size: 1.2em;
-  margin: 10px 0;
-  color: #D4AF37;
-  text-align: center;
-}
-
-.button {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  background-color: #b88f14;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: green;
-}
-
 .content {
   display: flex;
   justify-content: center;
@@ -160,7 +215,8 @@ hr {
 .item-list li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin: 10px;
+  margin: 6px;
+  color: #02192c;
 }
 
 .item-list {
@@ -177,8 +233,7 @@ hr {
   text-align: center;
   width: 100%;
   max-width: 400px;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .text-destaque-04 {

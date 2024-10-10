@@ -11,7 +11,7 @@ const HomePage = () => {
       title: "WhatsApp title 1", // apagar depois que tiver as imagens
     },
     {
-      href: "https://www.instagram.com/keziacavalcant/",
+      href: "https://www.instagram.com/keziafarias/",
       alt: "WhatsApp",
       title: "WhatsApp title 2",
     },
