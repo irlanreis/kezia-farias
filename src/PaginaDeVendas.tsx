@@ -1,4 +1,5 @@
 import "./styles/PageVendas.css";
+import "./styles/TabletVersion.css";
 import logo from "./assets/imgs/logo-admissao.svg";
 import logoTelas from "./assets/imgs/logo-telas.svg";
 import bronze from "./assets/imgs/card-01.jpg";
@@ -43,26 +44,32 @@ const PaginaDeVendas = () => {
           </strong>{" "}
           se não for conduzido corretamente.
         </p>
-      </div>
-
-      <div className="content">
         <p className="text-04">
-          Foi pensando nisso que criei o Kit Admissão de Empregadores, que vai
-          blindar sua empresa de{" "}
+          Foi pensando nisso que criei o{" "}
+          <span className="text-03-destaque">Kit Admissão de Empregadores</span>
+          , que vai blindar sua empresa de{" "}
           <span className="highlight">possíveis passivos trabalhistas</span>,
           economizando tempo, dinheiro e evitando dores de cabeça.
         </p>
-        <h2 className="text-destaque-04">
+        <p className="text-destaque-04">
           Quer saber o que você encontra dentro do Kit?
-        </h2>
+        </p>
+      </div>
 
+      <div className="content">
         {/* Container dos três cards */}
         <div className="cards-container">
           {/* Card 1 - Proteção Bronze */}
-          <div className={`card ${flippedCards[0] ? 'flipped' : ''}`}>
+          <div className={`card ${flippedCards[0] ? "flipped" : ""}`}>
             <div className="card-front">
               <img src={bronze} alt="proteção bronze" className="card-img" />
-              <button onClick={() => handleFlip(0)} type="button" className="btn">Ver detalhes</button>
+              <button
+                onClick={() => handleFlip(0)}
+                type="button"
+                className="btn"
+              >
+                Ver detalhes
+              </button>
             </div>
             <div className="card-back">
               <h3 className="title-h3">Proteção Bronze</h3>
@@ -86,22 +93,29 @@ const PaginaDeVendas = () => {
           </div>
 
           <p className="text-04">
-          Além dos documentos citados anteriomente, você recebe documentos mais
-          elaborados que garantem uma gestão eficiente e segura, como:
-        </p>
+            Além dos documentos citados anteriomente, você recebe documentos
+            mais elaborados que garantem uma gestão eficiente e segura, como:
+          </p>
 
           {/* Card 2 - Proteção Gold */}
-          <div className={`card ${flippedCards[1] ? 'flipped' : ''}`}>
+          <div className={`card ${flippedCards[1] ? "flipped" : ""}`}>
             <div className="card-front">
               <img src={gold} alt="proteção gold" className="card-img" />
-              <button onClick={() => handleFlip(1)} type="button" className="btn">Ver detalhes</button>
+              <button
+                onClick={() => handleFlip(1)}
+                type="button"
+                className="btn"
+              >
+                Ver detalhes
+              </button>
             </div>
             <div className="card-back">
               <h3 className="title-h3">Proteção Gold</h3>
               <ul className="item-list">
                 <li>Proteção Bronze</li>
                 <li>Termo para concessão do uso de imagem</li>
-                <li>Termo de Compromisso, Sigilo e Confidencialidade</li>
+                <li>Termo de Compromisso</li>
+                <li>Sigilo e Confidencialidade</li>
                 <li>Acordo de Compensação de Horas</li>
                 <li>Código de Conduta</li>
               </ul>
@@ -116,15 +130,24 @@ const PaginaDeVendas = () => {
             </div>
           </div>
           <p className="text-04">
-          Agora esse kit é pra você que deseja um <br /> pacote ainda mais
-          completo. <br />
-          Você garante todos os anteriores e mais:
-        </p>
+            Agora esse kit é pra você que deseja um pacote ainda mais
+            completo, você garante todos os anteriores e mais:
+          </p>
           {/* Card 3 - Proteção Max */}
-          <div className={`card ${flippedCards[2] ? 'flipped' : ''}`}>
+          <div className={`card ${flippedCards[2] ? "flipped" : ""}`}>
             <div className="card-front">
-              <img src={maxProtection} alt="proteção max" className="card-img" />
-              <button onClick={() => handleFlip(2)} type="button" className="btn">Ver detalhes</button>
+              <img
+                src={maxProtection}
+                alt="proteção max"
+                className="card-img"
+              />
+              <button
+                onClick={() => handleFlip(2)}
+                type="button"
+                className="btn"
+              >
+                Ver detalhes
+              </button>
             </div>
             <div className="card-back">
               <h3 className="title-h3">Proteção Max</h3>
