@@ -1,4 +1,12 @@
-/* Estilos básicos para dispositivos móveis */
+:root {
+  --font-defalt: clamp(6rem, 10vw + 0.1rem, 8rem);
+  --font-md: clamp(2rem, 3vw + 0.1rem, 10rem);
+  --font-sm: clamp(1.2rem, 2vw + 0.1rem, 2rem);
+  --font-xs: clamp(0.8rem, 1.8vw + 0.1rem, 2.4rem);
+
+  --icon-width: clamp(200px, 50vw + 0.1rem, 400px);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -26,39 +34,83 @@ body {
   padding: 1rem;
 }
 
+.icon-logo {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 0 0 0;
+}
+
+.icon-logoTelas {
+  width: 400px;
+  padding: 10px;
+}
+
 .container-imgs, .container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 2rem;
 }
 
-.icon-logo {
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
   width: 100%;
-  max-width: 300px;
+  gap: 1rem;
 }
 
-.icon-logoTelas {
-  width: 400px;
-}
-.text-01 {
+.text-01, .text-02, .text-03, .text-04 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2rem;
   color: #fff;
   text-align: center;
-  width: 400px;
+  width: 100%;
+  max-width: 500px;
+  font-size: var(--font-sm);
+}
+
+.text-01 {
+  padding: 0 38px;
+  text-align: justify;
 }
 
 .text-02 {
   font-family: "Gideon Roman", serif;
-  color: #fff;
   font-size: 1.8rem;
   font-weight: 200;
-  text-align: center;
-  max-width: 400px;
+}
+
+.text-03 {
+  font-size: 1.4rem;
+  border: 2px solid #b88f14;
+  border-radius: 10px;
+}
+
+.text-01-destaque, .text-03-destaque, .text-destaque-04 {
+  color: #ffedb7;
+}
+
+.text-01-destaque {
+  font-style: italic;
+}
+
+.text-destaque-04 {
+  font-size: 1.4rem;
+  width: 300px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  width: 90%;
+}
+
+.card-container {
+  perspective: 1000px; /* Para o efeito 3D */
 }
 
 .card {
@@ -67,7 +119,7 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s ease-in-out;
-  tranform-origin: center;
+  transform-origin: center;
   margin: 20px;
 }
 
@@ -81,7 +133,7 @@ body {
   height: 100%;
   backface-visibility: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
@@ -98,14 +150,13 @@ body {
   padding: 20px;
 }
 
-.card-back:nth-child(2) li {
-  font-family: "roboto", sans-serif;
+.card-back li {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
   margin: 6px;
   text-align: left;
-  margin: 10px;
 }
 
 .title-h3 {
@@ -143,7 +194,7 @@ body {
   background-color: green;
   color: #fff;
 }
- 
+
 .btn {
   background-color: #b88f14;
   color: #fff;
@@ -155,15 +206,16 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s;
-  position: absolute; 
-  bottom: 15px; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn:hover {
   background-color: #218838;
 }
+
 .text-01-destaque {
   font-style: italic;
   font-weight: 300;
@@ -208,16 +260,16 @@ hr {
   flex-wrap: wrap;
 }
 
+.item-list {
+  list-style: circle;
+  text-align: left;
+}
+
 .item-list li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 6px;
   color: #02192c;
-}
-
-.item-list {
-  list-style: circle;
-  text-align: left;
 }
 
 .text-04 {
@@ -251,4 +303,219 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container-icon-screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 16px;
+  right: 16px;
+  left: auto;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.home-icon {
+  position: relative;
+  width: 30px; /* Ajuste conforme necessário */
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 2px;
+}
+
+.text-home-icon {
+  display: none;
+}
+
+.container-icon-screen:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para tablets */
+@media (min-width: 660px) {
+  .container-text {
+    width: 100%;
+  }
+
+  .icon-logo {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .icon-logoTelas {
+    width: 480px;
+  }
+
+  .text-01, .text-03, .text-04 {
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .text-02 {
+    font-size: 2.8rem;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .text-destaque-04 {
+    font-size: 2.8rem;
+    color: #ffedb7;
+    text-align: center;
+    width: 620px;
+    padding: 10px 20px;
+  }
+
+  .text-03 {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .card {
+    width: 450px;
+    height: 580px;
+  }
+
+  .card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 5rem;
+  }
+
+  .title-h3 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .card-back li {
+    font-size: 3rem;
+    height: 30px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+  }
+
+  .btn-link {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+  }
+
+  .text-circle {
+    height: 240px;
+    border: 4px solid #b88f14;
+  }
+}
+
+/* Estilos para desktops */
+@media (min-width: 950px) {
+  .container-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    margin-right: auto;
+  }
+
+  .text-01 {
+    font-size:  var(--font-xs);
+    text-align: justify;
+  }
+
+  .text-02 {
+    font-size: var(--font-md);
+    text-align: justify;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .icon-logo {
+    width: 200px;
+  }
+
+  .icon-logoTelas {
+    width: 48vw;
+  }
+
+  .home-icon {
+    right: 10px;
+    position: relative;
+    width: 30px; /* Ajuste conforme necessário */
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 2px;
+  }
+
+  .text-home-icon {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 2px;
+    text-decoration: none;
+  }
+
+  .container-icon-screen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    right: 16px;
+    left: auto;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+  }
+  
+  .container-icon-screen:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  } 
 }

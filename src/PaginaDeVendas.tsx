@@ -1,11 +1,12 @@
 import "./styles/PageVendas.css";
-import "./styles/TabletVersion.css";
 import logo from "./assets/imgs/logo-admissao.svg";
-import logoTelas from "./assets/imgs/logo-telas.svg";
+import logoTelas from "./assets/imgs/logo-telas.png";
 import bronze from "./assets/imgs/card-01.jpg";
 import gold from "./assets/imgs/card-02.jpg";
 import maxProtection from "./assets/imgs/card-03.jpg";
 import { useState } from "react";
+import iconHome from "./assets/imgs/home-icon.svg";
+import { Link } from "react-router-dom";
 
 const PaginaDeVendas = () => {
   const [flippedCards, setFlippedCards] = useState([false, false, false]);
@@ -18,25 +19,36 @@ const PaginaDeVendas = () => {
 
   return (
     <div className="main-container">
-      <div className="container-imgs">
-        <img className="icon-logo" src={logo} alt="logo-page" />
-        <img className="icon-logoTelas" src={logoTelas} alt="logo-page" />
+      
+      <div className="hero-container">
+      <Link to={"/"} className="container-icon-screen">
+          <img className="home-icon" src={iconHome} />
+          <p className="home-icon text-home-icon">Home</p>
+      </Link>
+        <div className="container-imgs">
+          <img className="icon-logo" src={logo} alt="logo-page" />
+          <img className="icon-logoTelas" src={logoTelas} alt="logo-page" />
+        </div>
+
+        <div className="hero-text">
+          <p className="text-01">
+            Proteja seu negócio contra erros e idenizações com{" "}
+            <strong>modelos de documentos editáveis</strong> que vão
+            <strong className="text-01-destaque">
+              {" "}
+              blindar sua empresa
+            </strong>{" "}
+            de possíveis passivos trabalhistas, economizando tempo, dinheiro e
+            evitando dores de cabeça.
+          </p>
+          <p className="text-02 ">
+            O processo admissional é a porta de entrada de novos talentos na sua
+            empresa,
+          </p>
+        </div>
       </div>
-
+      <hr />
       <div className="container-text">
-        <p className="text-01">
-          Proteja seu negócio contra erros e idenizações com{" "}
-          <strong>modelos de documentos editáveis</strong> que vão
-          <strong className="text-01-destaque"> blindar sua empresa</strong> de
-          possíveis passivos trabalhistas, economizando tempo, dinheiro e
-          evitando dores de cabeça.
-        </p>
-        <p className="text-02">
-          O processo admissional é a porta de entrada de novos talentos na sua
-          empresa,
-        </p>
-
-        <hr />
         <p className="text-03">
           mas também pode ser a{" "}
           <strong className="text-03-destaque">
@@ -130,8 +142,8 @@ const PaginaDeVendas = () => {
             </div>
           </div>
           <p className="text-04">
-            Agora esse kit é pra você que deseja um pacote ainda mais
-            completo, você garante todos os anteriores e mais:
+            Agora esse kit é pra você que deseja um pacote ainda mais completo,
+            você garante todos os anteriores e mais:
           </p>
           {/* Card 3 - Proteção Max */}
           <div className={`card ${flippedCards[2] ? "flipped" : ""}`}>
