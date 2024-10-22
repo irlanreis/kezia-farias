@@ -7,6 +7,7 @@ import maxProtection from "./assets/imgs/card-03.jpg";
 import { useState } from "react";
 import iconHome from "./assets/imgs/home-icon.svg";
 import { Link } from "react-router-dom";
+import perfil02 from "./assets/imgs/perfil-02.png";
 
 const PaginaDeVendas = () => {
   const [flippedCards, setFlippedCards] = useState([false, false, false]);
@@ -19,12 +20,11 @@ const PaginaDeVendas = () => {
 
   return (
     <div className="main-container">
-      
       <div className="hero-container">
-      <Link to={"/"} className="container-icon-screen">
+        <Link to={"/"} className="container-icon-screen">
           <img className="home-icon" src={iconHome} />
           <p className="home-icon text-home-icon">Home</p>
-      </Link>
+        </Link>
         <div className="container-imgs">
           <img className="icon-logo" src={logo} alt="logo-page" />
           <img className="icon-logoTelas" src={logoTelas} alt="logo-page" />
@@ -43,11 +43,10 @@ const PaginaDeVendas = () => {
           </p>
           <p className="text-02 ">
             O processo admissional é a porta de entrada de novos talentos na sua
-            empresa,
+            empresa.
           </p>
         </div>
       </div>
-      <hr />
       <div className="container-text">
         <p className="text-03">
           mas também pode ser a{" "}
@@ -56,6 +55,7 @@ const PaginaDeVendas = () => {
           </strong>{" "}
           se não for conduzido corretamente.
         </p>
+        <hr />
         <p className="text-04">
           Foi pensando nisso que criei o{" "}
           <span className="text-03-destaque">Kit Admissão de Empregadores</span>
@@ -69,6 +69,11 @@ const PaginaDeVendas = () => {
       </div>
 
       <div className="content">
+        <p className="text-04">
+          A partir do kit <span className="text-spec">Gold</span> você terá
+          acesso a tudo do <span className="text-spec-02">kit anterior</span> e
+          muito mais!
+        </p>
         {/* Container dos três cards */}
         <div className="cards-container">
           {/* Card 1 - Proteção Bronze */}
@@ -104,11 +109,6 @@ const PaginaDeVendas = () => {
             </div>
           </div>
 
-          <p className="text-04">
-            Além dos documentos citados anteriomente, você recebe documentos
-            mais elaborados que garantem uma gestão eficiente e segura, como:
-          </p>
-
           {/* Card 2 - Proteção Gold */}
           <div className={`card ${flippedCards[1] ? "flipped" : ""}`}>
             <div className="card-front">
@@ -141,10 +141,6 @@ const PaginaDeVendas = () => {
               </a>
             </div>
           </div>
-          <p className="text-04">
-            Agora esse kit é pra você que deseja um pacote ainda mais completo,
-            você garante todos os anteriores e mais:
-          </p>
           {/* Card 3 - Proteção Max */}
           <div className={`card ${flippedCards[2] ? "flipped" : ""}`}>
             <div className="card-front">
@@ -169,6 +165,7 @@ const PaginaDeVendas = () => {
                 <li>Termo de Ciência de Gravação</li>
                 <li>Política de Remuneração</li>
                 <li>Regimento Interno</li>
+                <li className="invisible"></li>
               </ul>
               <div className="price">Por apenas R$497,00</div>
               <a
@@ -184,18 +181,16 @@ const PaginaDeVendas = () => {
       </div>
 
       {/* Resto do conteúdo */}
-      <p className="text-04">
-        Se você fosse contratar a elaboração desses documentos separadamente,
-      </p>
-      <p className="text-02 text-circle">
-        o investimento poderia ultrapassar o valor de R$ 5.000 a R$ 7.000,
+      <p className="text-invest">
+        Se você fosse contratar a elaboração desses documentos separadamente o
+        investimento poderia ultrapassar o valor de R$ 5.000 a R$ 7.000
       </p>
       <p className="text-04">
         Além de evitar multas e indenizações que poderiam ultrapassar esse valor
         facilmente, você protegerá seu patrimônio e garantindo a segurança
         jurídica da sua empresa.
       </p>
-      <p className="text-02">
+      <p className="text-02 text-all-files">
         Todos os arquivos são entregues em formato Word, 100% editáveis, para
         que você possa personalizar com o logo e dados da sua empresa.
       </p>
@@ -203,14 +198,35 @@ const PaginaDeVendas = () => {
         Não perca essa oportunidade de blindar seu negócio de forma prática e
         econômica!
       </p>
-      <a
-        type="button"
-        href="https://pay.kiwify.com.br/ccAlSE2"
-        target="blank"
-        className="btn-link"
-      >
-        CLIQUE AQUI E PROTEJA SUA EMPRESA
-      </a>
+
+      <div className="container-footer">
+        <div className="gradient">
+          <img src={perfil02} alt="foto Kezia Farias" className="perfil-02" />
+          <span className="gradient-bottom"></span>
+        </div>
+        <h1 className="title-description">Quem é Kezia Farias?</h1>
+        <p className="text-end">
+          <strong>Kézia Farias</strong> é Advogada desde 2008. Especialista em Direito do
+          Trabalho e Processo do Trabalho. Consultora em Privacidade e Proteção
+          de Dados. Consultora Empresarial. Membro da Comissão de Proteção de
+          Dados da OAB/SP. Membro da Comissão de Proteção de Dados da OAB/PA.
+          Membro da ANPPD. Possui mais de 16 anos de atuação profissional, na
+          prevenção jurídica e gestão trabalhista de empresas. Já atendeu mais
+          de 500 empresas ao longo de sua carreira, reduzindo custos
+          trabalhistas em cerca de 70%. Desenvolveu um método baseado nas
+          maiores demandas judiciais, para proteger empresários de perdas
+          judiciais.
+        </p>
+
+        <a
+          type="button"
+          href="https://pay.kiwify.com.br/ccAlSE2"
+          target="blank"
+          className="btn-link"
+        >
+          CLIQUE AQUI E PROTEJA SUA EMPRESA
+        </a>
+      </div>
     </div>
   );
 };
