@@ -1,8 +1,8 @@
 :root {
-  --font-defalt: clamp(6rem, 10vw + 0.1rem, 8rem);
-  --font-md: clamp(2rem, 3vw + 0.1rem, 4rem);
-  --font-sm: clamp(1.6vw, 3vw + 0.1rem, 2.6rem);
-  --font-xs: clamp(0.8rem, 1.8vw + 0.1rem, 2.4rem);
+  --font-defalt: clamp(1.8rem, 2vw + 0.1rem, 2rem);
+  --font-md: clamp(1.6rem, 2vw + 0.1rem, 2rem);
+  --font-sm: clamp(1.2rem, 2vw + 0.1rem, 2rem);
+  --font-xs: clamp(0.8rem, 2vw + 0.1rem, 2rem);
 
   --icon-width: clamp(200px, 50vw + 0.1rem, 400px);
 
@@ -94,7 +94,7 @@ body {
   color: var(--color-sext);
   text-align: center;
   width: 100%;
-  font-size: var(--font-sm);
+  font-size: var(--font-md);
 }
 
 .hero-text {
@@ -109,6 +109,7 @@ body {
 
 .text-01 {
   text-align: justify;
+  max-width: 90%;
 }
 
 .text-02 {
@@ -117,10 +118,11 @@ body {
   font-weight: 200;
   color: var(--color-sec);
   text-align: justify;
+  max-width: 90%;
 }
 
 .text-01-destaque,
-.text-03-destaque,
+.text-03-,
 .text-destaque-04 {
   color: var(--color-sec);
 }
@@ -326,7 +328,7 @@ hr {
 
 .text-04 {
   padding: 0 38px;
-  text-align: justify;
+  text-align: center;
 }
 
 .text-destaque-04 {
@@ -390,6 +392,15 @@ hr {
   width: 100%;
 }
 
+.container-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
 .perfil-02 {
   z-index: 1;
 }
@@ -440,14 +451,27 @@ hr {
   }
 
   .text-03 {
-    font-size: 1.2rem;
-    width: 80%;
+    font-family: "Gideon Roman", serif;
+    font-size: var(--font-md);
+    width: 90%;
   }
   .text-04 {
     font-size: 1.2rem;
     width: 100%;
-    text-align: center;
     padding: 0 18px;
+    text-align: center;
+  }
+
+  .container-infos {
+    gap: 1rem;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .perfil-02 {
@@ -472,17 +496,19 @@ hr {
   }
 
   .text-end {
-    font-size: var(--font-sm);
+    font-size: max(1.2rem, 2vw);
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     line-height: 1;
-    max-width: 470px;
+    max-width: 560px;
+    max-width: 560px;
     text-align: center;
-    padding: 20px 5px;
+    padding: 18px 0;
   }
 
   .btn-link {
-    padding: 20px;
+    font-size: max(4vw, 2vw);
+    padding: 20px 10px;
     margin-bottom: 20px;
   }
 }
@@ -523,10 +549,11 @@ hr {
   .text-01 {
     text-align: center;
     padding: 0 8px;
+    font-size: max(1.4rem, 2vw);
   }
 
   .text-02 {
-    font-size: max(3rem, 3vw);
+    font-size: max(2rem, 3vw);
     width: 100%;
     text-align: center;
     line-height: 1;
@@ -555,6 +582,58 @@ hr {
     width: 80%;
     height: 20%;
   }
+
+  .title-description {
+    font-size: max(2rem, 5vw);
+    font-family: "Gideon Roman", serif;
+    font-weight: 200;
+    color: var(--color-sec);
+    text-align: center;
+    padding: 0 13px;
+  }
+
+  .container-infos {
+    gap: 0;
+    width: 100%;
+    max-width: 450vw;
+    gap: 1rem;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gradient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfil-02 {
+    width: 80%;
+    max-width: 450vw;
+  }
+
+  .text-end {
+    font-size: max(1.6rem, 3vw);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    padding: 18px 0;
+    max-width: 760px;
+    width: 100%;
+  }
+  .btn-link {
+    font-size: max(4vw, 2vw);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Estilos para desktops */
@@ -580,7 +659,7 @@ hr {
   }
 
   .text-01 {
-    font-size: var(--font-xs);
+    font-size: max(1.2rem, 1.6vw);
     text-align: justify;
   }
 
@@ -594,10 +673,19 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    max-width: 90%;
+  }
+
+  .text-destaque-04 {
+    font-size: ;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #00134d;
+    box-shadow: 0 0 10px 0 #b88f14;
   }
 
   .text-invest {
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     font-family: "Gideon Roman", serif;
     width: 80%;
     text-align: center;
@@ -611,6 +699,7 @@ hr {
     justify-content: end;
     align-items: center;
     width: 100%;
+    gap: 1.8rem;
     margin-top: 40px;
   }
 
@@ -681,6 +770,48 @@ hr {
 
   .card-back {
     width: 100%;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .title-description {
+    font-size: max(2rem, 4vw);
+    font-family: "Gideon Roman", serif;
+    font-weight: 200;
+    color: var(--color-sec);
+    text-align: center;
+    padding: 0 13px;
+  }
+
+  .text-end {
+    font-size: max(1.2rem, 1.8vw);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    padding: 18px 0;
+    max-width: 760px;
+    width: 100%;
+  }
+
+  .btn-link {
+    font-size: max(1.2rem, 2vw);
+    padding: 20px 10px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: 1300px) {

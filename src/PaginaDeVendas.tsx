@@ -32,7 +32,7 @@ const PaginaDeVendas = () => {
 
         <div className="hero-text">
           <p className="text-01">
-            Proteja seu negócio contra erros e idenizações com{" "}
+            Proteja seu negócio contra erros e indenizações com{" "}
             <strong>modelos de documentos editáveis</strong> que vão
             <strong className="text-01-destaque">
               {" "}
@@ -49,11 +49,8 @@ const PaginaDeVendas = () => {
       </div>
       <div className="container-text">
         <p className="text-03">
-          mas também pode ser a{" "}
-          <strong className="text-03-destaque">
-            origem de grandes problemas
-          </strong>{" "}
-          se não for conduzido corretamente.
+          <strong>Mas também pode ser a origem de grandes problemas</strong> se
+          não for conduzido corretamente.
         </p>
         <hr />
         <p className="text-04">
@@ -190,7 +187,7 @@ const PaginaDeVendas = () => {
         facilmente, você protegerá seu patrimônio e garantindo a segurança
         jurídica da sua empresa.
       </p>
-      <p className="text-02 text-all-files">
+      <p className="text-invest text-all-files">
         Todos os arquivos são entregues em formato Word, 100% editáveis, para
         que você possa personalizar com o logo e dados da sua empresa.
       </p>
@@ -204,20 +201,21 @@ const PaginaDeVendas = () => {
           <img src={perfil02} alt="foto Kezia Farias" className="perfil-02" />
           <span className="gradient-bottom"></span>
         </div>
-        <h1 className="title-description">Quem é Kezia Farias?</h1>
-        <p className="text-end">
-          <strong>Kézia Farias</strong> é Advogada desde 2008. Especialista em Direito do
-          Trabalho e Processo do Trabalho. Consultora em Privacidade e Proteção
-          de Dados. Consultora Empresarial. Membro da Comissão de Proteção de
-          Dados da OAB/SP. Membro da Comissão de Proteção de Dados da OAB/PA.
-          Membro da ANPPD. Possui mais de 16 anos de atuação profissional, na
-          prevenção jurídica e gestão trabalhista de empresas. Já atendeu mais
-          de 500 empresas ao longo de sua carreira, reduzindo custos
-          trabalhistas em cerca de 70%. Desenvolveu um método baseado nas
-          maiores demandas judiciais, para proteger empresários de perdas
-          judiciais.
-        </p>
 
+        <div className="container-infos">
+          <h1 className="title-description">Quem é Kezia Farias?</h1>
+          <p className="text-01">
+            <strong>Kézia Farias</strong> é Advogada desde 2008. Especialista em
+            Direito do Trabalho e Processo do Trabalho. Consultora em
+            Privacidade e Proteção de Dados. Consultora Empresarial. Membro da
+            Comissão de Proteção de Dados da OAB/SP. Membro da Comissão de
+            Proteção de Dados da OAB/PA. Membro da ANPPD. Possui mais de 16 anos
+            de atuação profissional, na prevenção jurídica e gestão trabalhista
+            de empresas. Já atendeu mais de 500 empresas ao longo de sua
+            carreira, reduzindo custos trabalhistas em cerca de 70%. Desenvolveu
+            um método baseado nas maiores demandas judiciais, para proteger
+            empresários de perdas judiciais.
+          </p>
         <a
           type="button"
           href="https://pay.kiwify.com.br/ccAlSE2"
@@ -226,6 +224,7 @@ const PaginaDeVendas = () => {
         >
           CLIQUE AQUI E PROTEJA SUA EMPRESA
         </a>
+        </div>
       </div>
     </div>
   );
