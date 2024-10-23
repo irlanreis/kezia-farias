@@ -58,7 +58,7 @@ const PaginaDeVendas = () => {
           <span className="text-03-destaque">Kit Admissão de Empregadores</span>
           , que vai blindar sua empresa de{" "}
           <span className="highlight">possíveis passivos trabalhistas</span>,
-          economizando tempo, dinheiro e evitando dores de cabeça.
+          economizando tempo, dinheiro.
         </p>
         <p className="text-destaque-04">
           Quer saber o que você encontra dentro do Kit?
@@ -101,7 +101,7 @@ const PaginaDeVendas = () => {
                 target="_blank"
                 className="btn-link"
               >
-                Quero a proteção bronze
+                Quero a proteção BRONZE
               </a>
             </div>
           </div>
@@ -134,7 +134,7 @@ const PaginaDeVendas = () => {
                 target="_blank"
                 className="btn-link"
               >
-                Quero a proteção gold
+                Quero a proteção GOLD
               </a>
             </div>
           </div>
@@ -170,7 +170,7 @@ const PaginaDeVendas = () => {
                 target="_blank"
                 className="btn-link"
               >
-                Quero a proteção max
+                Quero a proteção MAX
               </a>
             </div>
           </div>
@@ -204,26 +204,29 @@ const PaginaDeVendas = () => {
 
         <div className="container-infos">
           <h1 className="title-description">Quem é Kezia Farias?</h1>
-          <p className="text-01">
-            <strong>Kézia Farias</strong> é Advogada desde 2008. Especialista em
-            Direito do Trabalho e Processo do Trabalho. Consultora em
-            Privacidade e Proteção de Dados. Consultora Empresarial. Membro da
-            Comissão de Proteção de Dados da OAB/SP. Membro da Comissão de
-            Proteção de Dados da OAB/PA. Membro da ANPPD. Possui mais de 16 anos
-            de atuação profissional, na prevenção jurídica e gestão trabalhista
-            de empresas. Já atendeu mais de 500 empresas ao longo de sua
-            carreira, reduzindo custos trabalhistas em cerca de 70%. Desenvolveu
-            um método baseado nas maiores demandas judiciais, para proteger
-            empresários de perdas judiciais.
+          <ul className="item-description">
+            <li>Advogada desde 2008</li>
+            <li>Especialista em Direito do Trabalho e Processo do Trabalho</li>
+            <li>Consultora em Privacidade e Proteção de Dados</li>
+            <li>Consultora Empresarial</li>
+            <li>Membro da Comissão de Proteção de Dados da OAB/SP e OAB/PA.</li>
+            <li>Membro da ANPPD</li>
+          </ul>
+          <p className="text-05">
+            Possui mais de 16 anos de atuação profissional, na prevenção
+            jurídica e gestão trabalhista de empresas. Já atendeu mais de 500
+            empresas ao longo de sua carreira, reduzindo custos trabalhistas em
+            cerca de 70%. Desenvolveu um método baseado nas maiores demandas
+            judiciais, para proteger empresários de perdas judiciais.
           </p>
-        <a
-          type="button"
-          href="https://pay.kiwify.com.br/ccAlSE2"
-          target="blank"
-          className="btn-link"
-        >
-          CLIQUE AQUI E PROTEJA SUA EMPRESA
-        </a>
+          <a
+            type="button"
+            href="https://pay.kiwify.com.br/ccAlSE2"
+            target="blank"
+            className="btn-link"
+          >
+            CLIQUE AQUI E PROTEJA SUA EMPRESA
+          </a>
         </div>
       </div>
     </div>

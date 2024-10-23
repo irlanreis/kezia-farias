@@ -187,6 +187,7 @@ hr {
 .card-back {
   transform: rotateY(180deg);
   box-shadow: 0 0 10px 0 var(--color-ter);
+  padding: 5px;
 }
 
 .card-back li {
@@ -198,9 +199,9 @@ hr {
   position: relative;
 }
 
-li::marker {
-  color: #28a745; /* Cor verde para o check */
-  content: "✔"; /* O símbolo de check */
+ul li::marker {
+  color: var(--color-nov); /* Cor verde para o check */
+  content: "\2714"; /* O símbolo de check */
 }
 
 .invisible {
@@ -401,6 +402,39 @@ hr {
   width: 100%;
 }
 
+.text-05 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var(--color-sext);
+  text-align: left;
+  width: 92%;
+  font-size: var(--font-sm);
+}
+
+.item-description {
+  font-family: "Gideon Roman", serif;
+  font-weight: 200;
+  font-size: var(--font-sm);
+  color: var(--color-sext);
+  text-align: left;
+  padding:  13px;
+  list-style-position: inside;
+  list-style: circle;
+  width: 90%;
+}
+
+.item-description li::marker {
+  color: var(--color-nov); /* Cor verde para o check */
+  content: "\2714"; /* O símbolo de check */
+}
+
+.item-description li {
+  font-weight: 400;
+  text-align: left;
+  padding-left: 10px; /* Aumenta o espaçamento entre o ícone e o texto */
+  position: relative;
+}
+
 .perfil-02 {
   z-index: 1;
 }
@@ -509,7 +543,6 @@ hr {
   .btn-link {
     font-size: max(4vw, 2vw);
     padding: 20px 10px;
-    margin-bottom: 20px;
   }
 }
 
@@ -597,6 +630,7 @@ hr {
     width: 100%;
     max-width: 450vw;
     gap: 1rem;
+    align-items: center;
   }
 
   .container-footer {
@@ -630,9 +664,8 @@ hr {
     width: 100%;
   }
   .btn-link {
-    font-size: max(4vw, 2vw);
+    font-size: max(1.6vw, 2.2vw);
     padding: 20px 10px;
-    margin-bottom: 20px;
   }
 }
 
@@ -674,6 +707,15 @@ hr {
     margin-right: auto;
     margin-bottom: 20px;
     max-width: 90%;
+  }
+  
+  .text-05 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--color-sext);
+    text-align: left;
+    width: 90%;
+    font-size: var(--font-sm);
   }
 
   .text-destaque-04 {
