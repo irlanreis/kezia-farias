@@ -1,6 +1,6 @@
 :root {
   --font-defalt: clamp(1.8rem, 2vw + 0.1rem, 2rem);
-  --font-md: clamp(1.6rem, 2vw + 0.1rem, 2rem);
+  --font-md: clamp(1.8rem, 2vw + 0.1rem, 2rem);
   --font-sm: clamp(1.2rem, 2vw + 0.1rem, 2rem);
   --font-xs: clamp(0.8rem, 2vw + 0.1rem, 2rem);
 
@@ -149,7 +149,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  pverflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .card {
@@ -248,8 +248,7 @@ ul li::marker {
   padding: 10px;
   background-color: #b88f14;
   border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: max(1.2rem, 2vw);
   font-family: "Roboto", sans-serif;
   max-width: 90%;
   text-align: center;
@@ -417,7 +416,7 @@ hr {
   font-size: var(--font-sm);
   color: var(--color-sext);
   text-align: left;
-  padding:  13px;
+  padding: 13px;
   list-style-position: inside;
   list-style: circle;
   width: 90%;
@@ -447,6 +446,36 @@ hr {
   z-index: 2;
 }
 
+.btn-link-footer {
+  font-size: max(1.2rem, 1.8vw);
+  font-weight: 400;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+  border-radius: 5px;
+  padding: 20px;
+  color: var(--color-sext);
+  background-color: var(--color-ter);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-link-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transition: all 0.5s;
+}
+
+.btn-link-footer:hover::before {
+  left: 100%;
+}
+
 @media (min-width: 350px) and (max-width: 660px) {
   .hero-text {
     display: flex;
@@ -458,14 +487,14 @@ hr {
 
   .text-01 {
     font-size: max(1.2rem, 2vw);
-    padding: 0 13px;
+    padding: 0 10px;
     text-align: center;
   }
 
   .text-02 {
-    font-size: var(--font-md);
+    font-size: max(1.6rem, 2vw);
     text-align: center;
-    padding: 0 13px;
+    padding: 0 10px;
   }
 
   .text-invest {
@@ -490,10 +519,12 @@ hr {
     width: 90%;
   }
   .text-04 {
-    font-size: 1.2rem;
-    width: 100%;
-    padding: 0 18px;
+    font-size: max(1.2rem, 2vw);
+    width: 90%;
+    padding: 0;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container-infos {
@@ -541,7 +572,7 @@ hr {
   }
 
   .btn-link {
-    font-size: max(4vw, 2vw);
+    font-size: max(1.4rem, 2vw);
     padding: 20px 10px;
   }
 }
@@ -664,7 +695,7 @@ hr {
     width: 100%;
   }
   .btn-link {
-    font-size: max(1.6vw, 2.2vw);
+    font-size: max(1.4rem, 2.2vw);
     padding: 20px 10px;
   }
 }
@@ -699,6 +730,7 @@ hr {
   .text-02 {
     font-size: var(--font-md);
     text-align: justify;
+    padding-bottom: 10px;
   }
 
   .text-04 {
@@ -708,7 +740,7 @@ hr {
     margin-bottom: 20px;
     max-width: 90%;
   }
-  
+
   .text-05 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -820,7 +852,7 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  
+
   .container-infos {
     display: flex;
     flex-direction: column;
@@ -851,9 +883,10 @@ hr {
   }
 
   .btn-link {
-    font-size: max(1.2rem, 2vw);
+    font-size: max(1rem, 1vw);
+    font-weight: 300;
+    max-width: 280px;
     padding: 20px 10px;
-    margin-bottom: 20px;
   }
 
   @media (min-width: 1300px) {

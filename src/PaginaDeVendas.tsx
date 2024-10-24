@@ -95,7 +95,7 @@ const PaginaDeVendas = () => {
                 <li>Termo de Autorização de Descontos</li>
                 <li>Termo de Tratamento de Dados Pessoais</li>
               </ul>
-              <div className="price">Por apenas R$147,00</div>
+              <div className="price">Por apenas <strong>R$147,00</strong></div>
               <a
                 href="https://pay.kiwify.com.br/bXt8Ek5"
                 target="_blank"
@@ -128,7 +128,7 @@ const PaginaDeVendas = () => {
                 <li>Acordo de Compensação de Horas</li>
                 <li>Código de Conduta</li>
               </ul>
-              <div className="price">Por apenas R$297,00</div>
+              <div className="price">Por apenas <strong>R$297,00</strong></div>
               <a
                 href="https://pay.kiwify.com.br/bXt8Ek5"
                 target="_blank"
@@ -164,7 +164,7 @@ const PaginaDeVendas = () => {
                 <li>Regimento Interno</li>
                 <li className="invisible"></li>
               </ul>
-              <div className="price">Por apenas R$497,00</div>
+              <div className="price">Por apenas <strong>R$497,00</strong></div>
               <a
                 href="https://pay.kiwify.com.br/bXt8Ek5"
                 target="_blank"
@@ -223,7 +223,7 @@ const PaginaDeVendas = () => {
             type="button"
             href="https://pay.kiwify.com.br/ccAlSE2"
             target="blank"
-            className="btn-link"
+            className="btn-link-footer"
           >
             CLIQUE AQUI E PROTEJA SUA EMPRESA
           </a>
