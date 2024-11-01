@@ -6,29 +6,24 @@ const HomePage = () => {
   const dataImages = [
     {
       href: "/page-vendas",
-      alt: "WhatsApp",
+      alt: "Pagina de vendas Adimissão de Funcionários",
       isReactLink: true,
-      title: "WhatsApp title 1", // apagar depois que tiver as imagens
     },
     {
-      href: "https://www.instagram.com/keziafarias/",
-      alt: "WhatsApp",
-      title: "WhatsApp title 2",
+      href: "https://bit.ly/consultoriarhavancado",
+      alt: "Consultoria avançada",
     },
     {
-      src: "whatsapp.png",
-      alt: "WhatsApp",
-      title: "WhatsApp title 3",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLSc_gM46HwXsy_3025n_mZKPKx57qDpYzMJ2CGSkrO2i4B9sXg/viewform",
+      alt: "Fórmulario de contato",
     },
     {
-      src: "whatsapp.png",
-      alt: "WhatsApp",
-      title: "WhatsApp title 4",
+      href: "https://pay.kiwify.com.br/ccAlSE2",
+      alt: "Kit Advertências e penalidades",
     },
     {
-      src: "whatsapp.png",
-      alt: "WhatsApp",
-      title: "WhatsApp title 5",
+      href: "https://wa.me/message/7RJ46OCZT4KXO1",
+      alt: "Link demandas trabalhistas",
     },
   ];
 
@@ -36,7 +31,7 @@ const HomePage = () => {
     <div className="container">
       <div className="profile">
         <img src={perfil} alt="kezia-cavalcante" className="profile-picture" />
-        <h1>Kezia Farias</h1>
+        <h1 className="name-title">Kezia Farias</h1>
       </div>
 
       <div className="access-links">

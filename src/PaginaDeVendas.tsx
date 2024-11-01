@@ -130,7 +130,7 @@ const PaginaDeVendas = () => {
               </ul>
               <div className="price">Por apenas <strong>R$297,00</strong></div>
               <a
-                href="https://pay.kiwify.com.br/bXt8Ek5"
+                href="https://pay.kiwify.com.br/3deCpsx"
                 target="_blank"
                 className="btn-link"
               >
@@ -166,7 +166,7 @@ const PaginaDeVendas = () => {
               </ul>
               <div className="price">Por apenas <strong>R$497,00</strong></div>
               <a
-                href="https://pay.kiwify.com.br/bXt8Ek5"
+                href="https://pay.kiwify.com.br/Ju9uYU6"
                 target="_blank"
                 className="btn-link"
               >
