@@ -128,7 +128,7 @@ const PaginaDeVendas = () => {
                 <li>Acordo de Compensação de Horas</li>
                 <li>Código de Conduta</li>
               </ul>
-              <div className="price">Por apenas <strong>R$297,00</strong></div>
+              <div className="price">Por apenas <strong>R$397,00</strong></div>
               <a
                 href="https://pay.kiwify.com.br/3deCpsx"
                 target="_blank"
@@ -166,7 +166,7 @@ const PaginaDeVendas = () => {
               </ul>
               <div className="price">Por apenas <strong>R$497,00</strong></div>
               <a
-                href="https://pay.kiwify.com.br/Ju9uYU6"
+                href="https://pay.kiwify.com.br/sVqU7H8"
                 target="_blank"
                 className="btn-link"
               >
